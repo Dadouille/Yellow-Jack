@@ -84,7 +84,7 @@ body {
     .1vw 0vw   5vw #fb0404, 
     .125vw 0vw  20vw #fb0404, 
     .15vw 0vw  10vw #fb0404;
-
+     animation: blink1 2s infinite alternate;
 }
 
 .card img {
@@ -133,7 +133,6 @@ text-shadow:
 .1vw 0vw  10vw #0408fb, 
 .15vw 0vw  30vw #0408fb, 
 .4vw 0vw  10vw #0408fb;
-animation: blink 5s infinite alternate; 
 }
 
 .titre{
@@ -168,7 +167,6 @@ animation: blink 5s infinite alternate;
     .1vw 0vw   5vw #fb0404, 
     .125vw 0vw  20vw #fb0404, 
     .15vw 0vw  10vw #fb0404; 
-    animation: blink1 6s infinite alternate; 
 }
 
 ul{
@@ -244,4 +242,43 @@ ul{
         
         filter: none;
     }  
+  }
+
+  .floating-btn{
+      position:fixed;
+      bottom: 50px;
+      right: 50px;
+      width: 75px;
+      height: 75px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      background: #7476ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .floating-btn .img1{
+      width: 35px;
+      height: 35px;
+  }
+
+  .floating-btn .tooltip{
+      position: absolute;
+      background: #fff;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 3px;
+      line-height: 1.4;
+      text-align: left;
+      width: 250px;
+      transform: translate(-180px, -50%);
+      box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+      pointer-events: none;
+      display: none;
+  }
+
+  .floating-btn:hover .tooltip{
+      display: block;
   }
