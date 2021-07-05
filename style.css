@@ -9,6 +9,7 @@ body {
 }
 
 .card {
+    display: block;
     min-width: 850px;
     position: absolute;
     top: 40%;
@@ -55,7 +56,7 @@ body {
     .15vw 0vw  30vw #0408fb, 
     .4vw 0vw  10vw #0408fb;
 
-    animation: blink 2s infinite alternate;
+    /* animation: blink 2s infinite alternate; */
 }
 
 
@@ -84,7 +85,6 @@ body {
     .1vw 0vw   5vw #fb0404, 
     .125vw 0vw  20vw #fb0404, 
     .15vw 0vw  10vw #fb0404;
-     animation: blink1 2s infinite alternate;
 }
 
 .card img {
@@ -93,18 +93,21 @@ body {
     filter: 
     drop-shadow(0 0.15vw 0.30vw #fffb0e)
     drop-shadow(0 0.15vw 0.30vw #8a8942);
-    animation: saxo-blink 2s infinite alternate;  
+    animation: saxo-blink 2s infinite alternate;   
 }
 
 .container{   
+display: flex;
+justify-content: center;
 margin-top: 25px;
 display: flex;
 width: 100%;
 }
 
 h2{  
-text-align: center;
-margin-top: 550px;
+display: flex;
+justify-content: center;
+margin-top: 700px;
 font-family: Mali, sans-serif;
 font-size: 70px;
 font-weight: 300;
@@ -147,9 +150,9 @@ text-shadow:
     font-family: Mali, sans-serif;
     font-size: 30px;
     font-weight: 300;
-    color: #f1f1f1e3;
+    color: #fff;
     text-shadow:
-    .1vw 0vw .25vw #ff7474, 
+     .1vw 0vw .25vw #ff7474, 
     .125vw 0vw .25vw #ff7474, 
 
     .1vw 0vw  .1vw #ff3131, 
@@ -198,36 +201,6 @@ ul{
     }    
   }
 
-  @keyframes blink1 {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-        text-shadow:
-        .1vw 0vw .25vw #ff7474, 
-        .125vw 0vw .25vw #ff7474, 
-    
-        .1vw 0vw  .1vw #ff3131, 
-        .125vw 0vw  .1vw #ff3131, 
-        .15vw 0vw  .1vw #ff3131,
-    
-        .1vw 0vw   2vw #ff3131, 
-        .125vw 0vw   2vw #ff3131, 
-        .15vw 0vw   2vw #ff3131, 
-    
-        .1vw 0vw   1vw #fb0404, 
-        .125vw 0vw   1vw #fb0404, 
-        .15vw 0vw   5vw #fb0404, 
-    
-        .1vw 0vw   5vw #fb0404, 
-        .125vw 0vw  20vw #fb0404, 
-        .15vw 0vw  10vw #fb0404; 
-    
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }    
-  }
   
   @keyframes saxo-blink {
     0%, 9%, 15%, 79%, 83%, 100%{
@@ -281,4 +254,12 @@ ul{
 
   .floating-btn:hover .tooltip{
       display: block;
+  }
+
+  .dadou{
+      display: flex;
+      justify-content: center;
+      margin-top: 800px;
+      color: #fff;
+      font-size: 25px;
   }
